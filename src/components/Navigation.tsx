@@ -20,9 +20,6 @@ const Navigation = ({}: NavigationProps) => {
     { label: 'Home', href: '#home' },
     { label: 'Product', href: '#product' },
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Features', href: '#features' },
-    { label: 'Benefits', href: '#benefits' },
-    { label: 'Technology', href: '#technology' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -46,11 +43,9 @@ const Navigation = ({}: NavigationProps) => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Activity className="w-5 h-5 text-aurevua-light" aria-hidden="true" />
-            </div>
+            
             <span className="text-xl font-bold text-aurevua-light tracking-tight">
-              Aurevua
+              AUREVUA
             </span>
           </div>
 

@@ -169,27 +169,6 @@ const Footer = () => {
                   </div>
                 </form>
               </div>
-
-              {/* Compliance Badges */}
-              <div>
-                <h4 className="text-sm font-medium text-aurevua-light mb-3">
-                  Compliance & Security
-                </h4>
-                <div className="flex items-center space-x-4 text-aurevua-light/60">
-                  <div className="flex items-center space-x-2">
-                    <Shield className="w-4 h-4" aria-hidden="true" />
-                    <span className="text-xs font-mono tracking-wide">HIPAA</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Shield className="w-4 h-4" aria-hidden="true" />
-                    <span className="text-xs font-mono tracking-wide">GDPR</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <FileText className="w-4 h-4" aria-hidden="true" />
-                    <span className="text-xs font-mono tracking-wide">CDSCO</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Footer Links */}
@@ -226,14 +205,14 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-sm text-aurevua-light/60">
               <p>
-                © 2024 Aurevua Technologies Pvt. Ltd. All rights reserved. |{' '}
+                © 2025 Aurevua. All rights reserved. |{' '}
                 <span className="font-mono tracking-wide">
                   Made in India for Indian Healthcare
                 </span>
               </p>
             </div>
 
-            {/* Social Links */}
+            {/* Social Links
             <div className="flex items-center space-x-6">
               {socialLinks.map((social) => (
                 <a
@@ -247,24 +226,7 @@ const Footer = () => {
                   <social.icon className="w-5 h-5" aria-hidden="true" />
                 </a>
               ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Accessibility Note */}
-        <div className="border-t border-aurevua-light/10 py-4">
-          <div className="text-center text-xs text-aurevua-light/50">
-            <p>
-              Designed with accessibility in mind. If you encounter any issues, 
-              please contact us at{' '}
-              <a 
-                href="mailto:accessibility@aurevua.com" 
-                className="underline hover:text-aurevua-light transition-colors duration-300 focus:text-aurevua-light"
-                aria-label="Contact accessibility support"
-              >
-                accessibility@aurevua.com
-              </a>
-            </p>
+            </div> */}
           </div>
         </div>
       </div>

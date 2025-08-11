@@ -84,7 +84,6 @@ const HeroSection = () => {
           {/* Key Benefits */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
             {[
-              { label: 'Early Detection', value: '95%+ Accuracy' },
               { label: 'Cost Reduction', value: '10x Cheaper' },
               { label: 'Rural Access', value: 'Offline Capable' }
             ].map((stat, index) => (
@@ -119,28 +118,6 @@ const HeroSection = () => {
               <span>Watch Demo</span>
             </button>
           </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-aurevua-light/20">
-            <p className="text-sm text-aurevua-light/60 mb-4 font-medium">
-              Trusted by Healthcare Professionals Across India
-            </p>
-            <div className="flex items-center justify-center space-x-8 text-aurevua-light/40">
-              <span className="text-xs font-mono tracking-widest">HIPAA COMPLIANT</span>
-              <span className="w-px h-4 bg-aurevua-light/20" aria-hidden="true" />
-              <span className="text-xs font-mono tracking-widest">GDPR READY</span>
-              <span className="w-px h-4 bg-aurevua-light/20" aria-hidden="true" />
-              <span className="text-xs font-mono tracking-widest">CDSCO ALIGNED</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-aurevua-light/60">
-        <div className="flex flex-col items-center space-y-2">
-          <span className="text-xs font-medium tracking-wide">SCROLL TO EXPLORE</span>
-          <div className="w-0.5 h-8 bg-gradient-to-b from-aurevua-light/60 to-transparent" aria-hidden="true" />
         </div>
       </div>
     </section>
