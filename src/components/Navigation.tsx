@@ -50,7 +50,7 @@ const Navigation = ({}: NavigationProps) => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center justify-center space-x-8 flex-1">
             {navItems.map((item) => (
               <button
                 key={item.label}
@@ -61,6 +61,10 @@ const Navigation = ({}: NavigationProps) => {
                 {item.label}
               </button>
             ))}
+          </div>
+
+          {/* Desktop CTA Button */}
+          <div className="hidden lg:block">
             <button 
               onClick={() => handleNavClick('#contact')}
               className="btn-primary ripple-effect focus-visible"

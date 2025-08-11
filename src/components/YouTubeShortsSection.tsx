@@ -18,22 +18,6 @@ const YouTubeShortsSection = () => {
       thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
       url: 'https://youtube.com/shorts/dQw4w9WgXcQ',
       duration: '1:20'
-    },
-    {
-      id: 'doctor-testimonial',
-      title: 'Doctor Testimonial',
-      description: 'Pediatrician shares experience with Aurevua',
-      thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-      url: 'https://youtube.com/shorts/dQw4w9WgXcQ',
-      duration: '0:58'
-    },
-    {
-      id: 'ai-explanation',
-      title: 'AI Technology Explained',
-      description: 'How our AI detects cranial deformities',
-      thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-      url: 'https://youtube.com/shorts/dQw4w9WgXcQ',
-      duration: '1:15'
     }
   ];
 
@@ -70,7 +54,7 @@ const YouTubeShortsSection = () => {
         </div>
 
         {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
           {videos.map((video, index) => (
             <div
               key={video.id}
