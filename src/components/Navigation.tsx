@@ -45,7 +45,7 @@ const Navigation = ({}: NavigationProps) => {
           <div className="flex items-center space-x-3">
             
             <span className="text-xl font-bold text-aurevua-light tracking-tight">
-              AUREVUA
+              CRANIORA
             </span>
           </div>
 

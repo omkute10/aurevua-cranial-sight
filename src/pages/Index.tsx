@@ -18,7 +18,6 @@ const Index = () => {
         <ProductSection />
         <HowItWorksSection />
         <YouTubeShortsSection />
-        <ContactSection />
       </main>
       
       {/* Footer */}

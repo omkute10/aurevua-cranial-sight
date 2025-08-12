@@ -129,10 +129,7 @@ const Footer = () => {
               {/* Logo & Description */}
               <div>
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 border-2 border-aurevua-light rounded-full" aria-hidden="true" />
-                  </div>
-                  <span className="text-2xl font-bold tracking-tight">Aurevua</span>
+                  <span className="text-2xl font-bold tracking-tight">CRANIORA</span>
                 </div>
                 <p className="text-aurevua-light/70 leading-relaxed">
                   Revolutionizing infant healthcare with AI-powered cranial screening 
@@ -146,7 +143,7 @@ const Footer = () => {
                   Stay Updated
                 </h3>
                 <p className="text-sm text-aurevua-light/60 mb-4">
-                  Get the latest updates on Aurevua and healthcare AI innovations.
+                  Get the latest updates on Craniora and healthcare AI innovations.
                 </p>
                 <form onSubmit={handleNewsletterSubmit} className="space-y-3">
                   <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
@@ -205,7 +202,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-sm text-aurevua-light/60">
               <p>
-                © 2025 Aurevua. All rights reserved. |{' '}
+                © 2025 Craniora. All rights reserved. |{' '}
                 <span className="font-mono tracking-wide">
                   Made in India for Indian Healthcare
                 </span>

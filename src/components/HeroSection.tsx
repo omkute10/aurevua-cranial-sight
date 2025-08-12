@@ -68,7 +68,7 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="heading-hero text-aurevua-light mb-6">
-            <span className="block">Aurevua: AI-Powered</span>
+            <span className="block">CRANIORA: AI-Powered</span>
             <span className="block bg-gradient-to-r from-aurevua-light to-aurevua-accent bg-clip-text text-transparent">
               Cranial Screening
             </span>
