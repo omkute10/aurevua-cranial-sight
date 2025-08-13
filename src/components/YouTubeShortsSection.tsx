@@ -6,17 +6,17 @@ const YouTubeShortsSection = () => {
     {
       id: 'demo-scan',
       title: 'Live Scanning Demo',
-      description: 'See how healthcare providers use Aurevua to scan infants',
-      thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-      url: 'https://youtube.com/shorts/dQw4w9WgXcQ',
+      description: 'See how foreign companies use their technology to scan infants',
+      thumbnail: 'public/youtube1.png',
+      url: 'https://youtube.com/shorts/O10E0zE9CQY?si=FBPGWIF8d-NV02VY',
       duration: '0:45'
     },
     {
       id: 'rural-impact',
-      title: 'Rural Healthcare Impact',
-      description: 'Transforming infant care in remote Indian villages',
-      thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-      url: 'https://youtube.com/shorts/dQw4w9WgXcQ',
+      title: '3D Face Scan',
+      description: 'See how foreign companies use their technology to scan infants',
+      thumbnail: 'public/youtube1.png',
+      url: 'https://www.youtube.com/shorts/Rp-QULygjOo?feature=share',
       duration: '1:20'
     }
   ];
@@ -40,15 +40,15 @@ const YouTubeShortsSection = () => {
         <div className="text-center mb-16 fade-in">
           <div className="inline-block bg-primary/5 border border-primary/10 rounded-full px-4 py-2 mb-6">
             <span className="text-sm font-medium text-primary tracking-wide">
-              AUREVUA IN ACTION
+              Reference Videos
             </span>
           </div>
           <h2 className="heading-section mb-6">
-            See Our Technology
+            See the Technology
             <span className="block text-primary">in Real-World Action</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto text-lg leading-relaxed">
-            Watch how Aurevua is transforming infant healthcare across India, 
+            Watch how Foreign Companies transform infant healthcare, 
             from busy metropolitan hospitals to remote village clinics.
           </p>
         </div>
@@ -115,38 +115,6 @@ const YouTubeShortsSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center fade-in">
-          <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
-              Want to See Aurevua in Your Clinic?
-            </h3>
-            <p className="text-body mb-8 max-w-2xl mx-auto">
-              Schedule a personalized demo to see how Aurevua can transform 
-              your infant screening workflow and improve patient outcomes.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <button 
-                onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-primary focus-visible"
-                aria-label="Schedule a personalized demo"
-              >
-                Schedule Demo
-              </button>
-              <a
-                href="https://youtube.com/@aurevua"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary focus-visible flex items-center space-x-2"
-                aria-label="Visit our YouTube channel"
-              >
-                <span>Visit Channel</span>
-                <ExternalLink className="w-4 h-4" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

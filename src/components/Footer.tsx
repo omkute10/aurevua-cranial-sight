@@ -63,30 +63,12 @@ const Footer = () => {
       ]
     },
     {
-      title: 'Company',
-      links: [
-        { label: 'About Us', href: '#about' },
-        { label: 'Our Mission', href: '#mission' },
-        { label: 'Careers', href: '#careers' },
-        { label: 'Contact', href: '#contact' }
-      ]
-    },
-    {
       title: 'Resources',
       links: [
         { label: 'Documentation', href: '#docs' },
         { label: 'Research Papers', href: '#research' },
         { label: 'Case Studies', href: '#cases' },
         { label: 'Support', href: '#support' }
-      ]
-    },
-    {
-      title: 'Legal',
-      links: [
-        { label: 'Privacy Policy', href: '#privacy' },
-        { label: 'Terms of Service', href: '#terms' },
-        { label: 'Data Security', href: '#security' },
-        { label: 'Compliance', href: '#compliance' }
       ]
     }
   ];
@@ -135,36 +117,6 @@ const Footer = () => {
                   Revolutionizing infant healthcare with AI-powered cranial screening 
                   solutions designed for the Indian healthcare ecosystem.
                 </p>
-              </div>
-
-              {/* Newsletter Signup */}
-              <div>
-                <h3 className="text-lg font-semibold text-aurevua-light mb-4">
-                  Stay Updated
-                </h3>
-                <p className="text-sm text-aurevua-light/60 mb-4">
-                  Get the latest updates on Craniora and healthcare AI innovations.
-                </p>
-                <form onSubmit={handleNewsletterSubmit} className="space-y-3">
-                  <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="your.email@hospital.com"
-                      className="flex-1 px-4 py-3 bg-aurevua-light/10 border border-aurevua-light/20 rounded-lg text-aurevua-light placeholder-aurevua-light/50 focus:outline-none focus:ring-2 focus:ring-aurevua-light/50 transition-colors duration-300"
-                      aria-label="Email address for newsletter"
-                    />
-                    <button
-                      type="submit"
-                      disabled={isSubscribing}
-                      className="px-6 py-3 bg-aurevua-light text-aurevua-dark rounded-lg font-medium hover:bg-aurevua-light/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-aurevua-light/50"
-                      aria-label="Subscribe to newsletter"
-                    >
-                      {isSubscribing ? 'Subscribing...' : 'Subscribe'}
-                    </button>
-                  </div>
-                </form>
               </div>
             </div>
 

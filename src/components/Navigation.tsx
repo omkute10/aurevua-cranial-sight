@@ -20,7 +20,7 @@ const Navigation = ({}: NavigationProps) => {
     { label: 'Home', href: '#home' },
     { label: 'Product', href: '#product' },
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'In Action', href: '#videos' }
   ];
 
   const handleNavClick = (href: string) => {
