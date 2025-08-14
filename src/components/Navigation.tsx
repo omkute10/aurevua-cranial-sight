@@ -33,8 +33,8 @@ const Navigation = ({}: NavigationProps) => {
     <nav 
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-aurevua-dark/90 backdrop-blur-md shadow-medium' 
-          : 'bg-aurevua-dark/60 backdrop-blur-sm'
+          ? 'bg-aurevua-dark/30 backdrop-blur-lg shadow-medium' 
+          : 'bg-aurevua-dark/20 backdrop-blur-md'
       }`}
       role="navigation"
       aria-label="Main navigation"

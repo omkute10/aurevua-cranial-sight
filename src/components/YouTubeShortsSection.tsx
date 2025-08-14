@@ -54,62 +54,42 @@ const YouTubeShortsSection = () => {
         </div>
 
         {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
           {videos.map((video, index) => (
             <div
               key={video.id}
-              className={`group cursor-pointer fade-in`}
+              className={`group fade-in`}
               style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => handleVideoClick(video)}
-              role="button"
-              tabIndex={0}
-              aria-label={`Play video: ${video.title}`}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault();
-                  handleVideoClick(video);
-                }
-              }}
             >
-              <div className="relative overflow-hidden rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2">
-                {/* Video Thumbnail */}
-                <div className="relative aspect-[9/16] bg-gradient-primary overflow-hidden">
-                  {/* Placeholder for actual video thumbnail */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-aurevua-dark to-aurevua-accent flex items-center justify-center">
-                    <div className="text-center text-aurevua-light">
-                      <Play className="w-12 h-12 mx-auto mb-2 opacity-80" aria-hidden="true" />
-                      <div className="text-xs font-mono tracking-wide">{video.duration}</div>
-                    </div>
-                  </div>
-                  
-                  {/* Play Button Overlay */}
-                  <div className="absolute inset-0 bg-aurevua-dark/0 group-hover:bg-aurevua-dark/20 transition-colors duration-300 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-aurevua-light/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-75 group-hover:scale-100 transform">
-                      <Play className="w-6 h-6 text-aurevua-light ml-1" aria-hidden="true" />
-                    </div>
-                  </div>
-
-                  {/* Duration Badge */}
-                  <div className="absolute top-3 right-3 bg-aurevua-dark/80 backdrop-blur-sm text-aurevua-light px-2 py-1 rounded text-xs font-mono">
-                    {video.duration}
-                  </div>
+              <div className="relative overflow-hidden rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-all duration-300">
+                {/* Embedded YouTube Video */}
+                <div className="relative aspect-[9/16] overflow-hidden">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id === 'demo-scan' ? 'O10E0zE9CQY' : 'Rp-QULygjOo'}`}
+                    className="w-full h-full"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title={video.title}
+                  />
                 </div>
 
                 {/* Video Info */}
-                <div className="p-4">
-                  <h3 className="font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                <div className="p-3">
+                  <h3 className="font-semibold text-foreground mb-1 text-sm">
                     {video.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">
                     {video.description}
                   </p>
                   
-                  {/* External Link Indicator */}
-                  <div className="flex items-center justify-between mt-3 pt-3 border-t border-border">
+                  {/* YouTube Shorts Indicator */}
+                  <div className="flex items-center justify-between mt-2 pt-2 border-t border-border">
                     <span className="text-xs text-muted-foreground font-medium">
                       YouTube Shorts
                     </span>
-                    <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary transition-colors duration-300" aria-hidden="true" />
+                    <span className="text-xs text-muted-foreground">
+                      {video.duration}
+                    </span>
                   </div>
                 </div>
               </div>
