@@ -1,29 +1,12 @@
 import { Play, ExternalLink } from 'lucide-react';
 
 const YouTubeShortsSection = () => {
-  // Placeholder video data - replace with actual YouTube Shorts URLs
-  const videos = [
-    {
-      id: 'demo-scan',
-      title: 'Live Scanning Demo',
-      description: 'See how foreign companies use their technology to scan infants',
-      thumbnail: 'public/youtube1.png',
-      url: 'https://youtube.com/shorts/O10E0zE9CQY?si=FBPGWIF8d-NV02VY',
-      duration: '0:45'
-    },
-    {
-      id: 'rural-impact',
-      title: '3D Face Scan',
-      description: 'See how foreign companies use their technology to scan infants',
-      thumbnail: 'public/youtube1.png',
-      url: 'https://www.youtube.com/shorts/Rp-QULygjOo?feature=share',
-      duration: '1:20'
-    }
-  ];
-
-  const handleVideoClick = (video: typeof videos[0]) => {
-    // Open video in new tab or trigger modal
-    window.open(video.url, '_blank', 'noopener,noreferrer');
+  const video = {
+    id: 'cuuEGIO3akA',
+    title: 'Craniora Technology Demo',
+    description: 'See how Craniora technology transforms infant healthcare screening',
+    url: 'https://www.youtube.com/watch?v=cuuEGIO3akA',
+    duration: '3:25'
   };
 
   return (
@@ -53,48 +36,42 @@ const YouTubeShortsSection = () => {
           </p>
         </div>
 
-        {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
-          {videos.map((video, index) => (
-            <div
-              key={video.id}
-              className={`group fade-in`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="relative overflow-hidden rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-all duration-300">
-                {/* Embedded YouTube Video */}
-                <div className="relative aspect-[9/16] overflow-hidden">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${video.id === 'demo-scan' ? 'O10E0zE9CQY' : 'Rp-QULygjOo'}`}
-                    className="w-full h-full"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    title={video.title}
-                  />
-                </div>
+        {/* Video Display */}
+        <div className="max-w-4xl mx-auto">
+          <div className="group fade-in">
+            <div className="relative overflow-hidden rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-all duration-300">
+              {/* Embedded YouTube Video */}
+              <div className="relative aspect-video overflow-hidden">
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  className="w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title={video.title}
+                />
+              </div>
 
-                {/* Video Info */}
-                <div className="p-3">
-                  <h3 className="font-semibold text-foreground mb-1 text-sm">
-                    {video.title}
-                  </h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">
-                    {video.description}
-                  </p>
-                  
-                  {/* YouTube Shorts Indicator */}
-                  <div className="flex items-center justify-between mt-2 pt-2 border-t border-border">
-                    <span className="text-xs text-muted-foreground font-medium">
-                      YouTube Shorts
-                    </span>
-                    <span className="text-xs text-muted-foreground">
-                      {video.duration}
-                    </span>
-                  </div>
+              {/* Video Info */}
+              <div className="p-6">
+                <h3 className="font-semibold text-foreground mb-2 text-lg">
+                  {video.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {video.description}
+                </p>
+                
+                {/* Video Meta */}
+                <div className="flex items-center justify-between mt-4 pt-4 border-t border-border">
+                  <span className="text-sm text-muted-foreground font-medium">
+                    YouTube Video
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    {video.duration}
+                  </span>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

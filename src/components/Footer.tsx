@@ -129,13 +129,25 @@ const Footer = () => {
                     <ul className="space-y-3">
                       {section.links.map((link) => (
                         <li key={link.label}>
-                          <button
-                            onClick={() => handleSectionClick(link.href)}
-                            className="text-aurevua-light/70 hover:text-aurevua-light transition-colors duration-300 text-sm focus:outline-none focus:text-aurevua-light"
-                            aria-label={`Navigate to ${link.label}`}
-                          >
-                            {link.label}
-                          </button>
+                          {link.href.startsWith('http') ? (
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-aurevua-light/70 hover:text-aurevua-light transition-colors duration-300 text-sm focus:outline-none focus:text-aurevua-light"
+                              aria-label={`Open ${link.label} in new tab`}
+                            >
+                              {link.label}
+                            </a>
+                          ) : (
+                            <button
+                              onClick={() => handleSectionClick(link.href)}
+                              className="text-aurevua-light/70 hover:text-aurevua-light transition-colors duration-300 text-sm focus:outline-none focus:text-aurevua-light"
+                              aria-label={`Navigate to ${link.label}`}
+                            >
+                              {link.label}
+                            </button>
+                          )}
                         </li>
                       ))}
                     </ul>
