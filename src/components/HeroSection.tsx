@@ -82,18 +82,18 @@ const HeroSection = () => {
           </p>
 
           {/* Key Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-12 max-w-4xl mx-auto">
             {[
               { label: 'Cost Reduction', value: '10x Cheaper' },
               { label: 'Rural Access', value: 'Offline Capable' }
             ].map((stat, index) => (
               <div 
                 key={stat.label}
-                className={`bg-aurevua-light/5 backdrop-blur-sm border border-aurevua-light/20 rounded-lg p-6 ${mounted ? 'slide-in' : 'opacity-0'}`}
+                className={`bg-aurevua-light/10 backdrop-blur-sm border border-aurevua-light/30 rounded-lg p-4 lg:p-6 ${mounted ? 'slide-in' : 'opacity-0'}`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="text-2xl font-bold text-aurevua-light mb-2">{stat.value}</div>
-                <div className="text-sm text-aurevua-light/70 font-medium">{stat.label}</div>
+                <div className="text-xl lg:text-2xl font-bold text-aurevua-light mb-2">{stat.value}</div>
+                <div className="text-sm text-aurevua-light/80 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>

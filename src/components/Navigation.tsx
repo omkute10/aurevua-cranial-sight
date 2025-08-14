@@ -25,16 +25,20 @@ const Navigation = ({}: NavigationProps) => {
 
   const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (href === 'footer') {
+      document.querySelector('footer')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      const element = document.querySelector(href);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <nav 
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-aurevua-dark/30 backdrop-blur-lg shadow-medium' 
-          : 'bg-aurevua-dark/20 backdrop-blur-md'
+          ? 'bg-aurevua-dark/80 backdrop-blur-lg shadow-medium' 
+          : 'bg-aurevua-dark/60 backdrop-blur-md'
       }`}
       role="navigation"
       aria-label="Main navigation"
@@ -69,9 +73,9 @@ const Navigation = ({}: NavigationProps) => {
           {/* Desktop CTA Button */}
           <div className="hidden lg:block">
             <button 
-              onClick={() => handleNavClick('#contact')}
+              onClick={() => handleNavClick('footer')}
               className="btn-primary ripple-effect focus-visible"
-              aria-label="Request demo"
+              aria-label="Go to resources"
             >
               Resources
             </button>
@@ -107,9 +111,9 @@ const Navigation = ({}: NavigationProps) => {
                 </button>
               ))}
               <button 
-                onClick={() => handleNavClick('#contact')}
+                onClick={() => handleNavClick('footer')}
                 className="btn-primary mt-4 focus-visible"
-                aria-label="Request demo"
+                aria-label="Go to resources"
               >
                 Resources
               </button>
