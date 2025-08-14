@@ -173,10 +173,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-sm text-aurevua-light/60">
               <p>
-                © 2025 Craniora. All rights reserved. |{' '}
-                <span className="font-mono tracking-wide">
-                  Made in India for Indian Healthcare
-                </span>
+                © 2025 Craniora. All rights reserved.
               </p>
             </div>
 
