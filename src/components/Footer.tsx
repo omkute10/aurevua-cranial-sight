@@ -58,8 +58,7 @@ const Footer = () => {
       links: [
         { label: 'Overview', href: '#product' },
         { label: 'How It Works', href: '#how-it-works' },
-        { label: 'Features', href: '#features' },
-        { label: 'Technology', href: '#technology' }
+        { label: 'References', href: '#videos' }
       ]
     },
     {
@@ -68,7 +67,6 @@ const Footer = () => {
         { label: 'Documentation', href: '#docs' },
         { label: 'Research Papers', href: '#research' },
         { label: 'Case Studies', href: '#cases' },
-        { label: 'Support', href: '#support' }
       ]
     }
   ];
@@ -147,9 +145,9 @@ const Footer = () => {
                 {/* Logo Section */}
                 <div className="flex items-center justify-center">
                   <img 
-                    src="/src/assets/craniora-logo.svg" 
+                    src="/favicon.ico" 
                     alt="CRANIORA Logo" 
-                    className="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    className="h-30 w-auto"
                   />
                 </div>
               </div>

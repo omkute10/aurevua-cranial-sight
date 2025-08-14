@@ -57,7 +57,7 @@ const ProductSection = () => {
             <span className="block text-primary">Cranial Screening Solution</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto text-lg leading-relaxed">
-            From capture to diagnosis, Aurevua provides a comprehensive AI-powered platform 
+            From capture to diagnosis, Craniora provides a comprehensive AI-powered platform 
             designed specifically for the unique challenges of Indian healthcare infrastructure.
           </p>
         </div>
@@ -70,16 +70,15 @@ const ProductSection = () => {
               <div className="absolute inset-0 bg-gradient-glow opacity-20 rounded-2xl blur-xl group-hover:opacity-30 transition-opacity duration-500" aria-hidden="true" />
               <div className="relative z-10 w-full aspect-video rounded-2xl overflow-hidden shadow-strong hover:shadow-glow transition-all duration-500">
                 <iframe
-                  src="https://player.vimeo.com/video/1038934529?autoplay=1&muted=1&loop=1&background=1"
+                  src="/cranioraVideo1.mp4"
                   className="w-full h-full"
-                  frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
                   title="CRANIORA AI Cranial Screening Demo"
                 />
               </div>
               <div className="absolute top-4 right-4 z-20 bg-aurevua-dark/80 backdrop-blur-sm text-aurevua-light px-3 py-1 rounded-full text-xs font-mono">
-                LIVE DEMO
+                DEMO
               </div>
             </div>
           </div>
@@ -91,7 +90,7 @@ const ProductSection = () => {
                 Revolutionary AI Screening Platform
               </h3>
               <p className="text-body text-lg leading-relaxed mb-6">
-                Aurevua transforms complex cranial deformity detection into a simple, 
+                Craniora transforms complex cranial deformity detection into a simple, 
                 accessible process that works everywhere — from metropolitan hospitals 
                 to remote village clinics.
               </p>
@@ -119,7 +118,7 @@ const ProductSection = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" aria-hidden="true" />
                 <p className="text-body">
-                  <strong>Offline Capability:</strong> CoreML processing enables analysis without internet connectivity
+                  <strong>Non-Radiographic:</strong> Our product uses safe, non‑radiographic 3D/2D optical imaging — no X‑rays, no radiation, safe for infants.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
@@ -156,7 +155,7 @@ const ProductSection = () => {
           <button 
             onClick={() => document.querySelector('#how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary focus-visible"
-            aria-label="Learn how Aurevua works"
+            aria-label="Learn how Craniora works"
           >
             See How It Works
           </button>
