@@ -150,35 +150,6 @@ const HowItWorksSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-20 fade-in">
-          <div className="bg-aurevua-light/5 backdrop-blur-sm border border-aurevua-light/20 rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-bold text-aurevua-light mb-4">
-              Ready to Transform Your Screening Process?
-            </h3>
-            <p className="text-aurevua-light/80 mb-8 max-w-2xl mx-auto">
-              Join healthcare providers across India who are already using Aurevua 
-              to provide better care for infants and families.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <button 
-                onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-primary focus-visible"
-                aria-label="Request a demo"
-              >
-                Request Demo
-              </button>
-              <button 
-                onClick={() => document.querySelector('#features')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-secondary focus-visible"
-                aria-label="Explore features"
-              >
-                Explore Features
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

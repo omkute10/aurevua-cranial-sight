@@ -64,7 +64,7 @@ const Footer = () => {
     {
       title: 'Resources',
       links: [
-        { label: 'Documentation', href: '#docs' },
+        { label: 'Abstract', href: '#docs' },
         { label: 'Research Papers', href: '#research' },
         { label: 'Case Studies', href: '#cases' },
       ]

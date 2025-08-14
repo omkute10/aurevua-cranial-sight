@@ -97,27 +97,6 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button
-              onClick={handleCTAClick}
-              className="btn-primary pulse-glow group focus-visible flex items-center space-x-2 text-lg px-8 py-4"
-              aria-label="Request a demo of Aurevua"
-            >
-              <span>Request Demo</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true" />
-            </button>
-            
-            <button
-              onClick={handleWatchDemo}
-              className="btn-secondary group focus-visible flex items-center space-x-2 text-lg px-8 py-4"
-              aria-label="Watch demo video"
-            >
-              <Play className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-              <span>Watch Demo</span>
-            </button>
-          </div>
         </div>
       </div>
     </section>

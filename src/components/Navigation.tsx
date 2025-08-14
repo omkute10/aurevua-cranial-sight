@@ -44,7 +44,7 @@ const Navigation = ({}: NavigationProps) => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <button
-              onClick={() => handleNavClick('#')}
+              onClick={() => handleNavClick('#home')}
               className="text-xl font-bold text-aurevua-light tracking-tight hover:text-aurevua-accent transition-colors duration-300 focus-visible"
               aria-label="Go to home"
             >
@@ -73,7 +73,7 @@ const Navigation = ({}: NavigationProps) => {
               className="btn-primary ripple-effect focus-visible"
               aria-label="Request demo"
             >
-              Request Demo
+              Resources
             </button>
           </div>
 
@@ -111,7 +111,7 @@ const Navigation = ({}: NavigationProps) => {
                 className="btn-primary mt-4 focus-visible"
                 aria-label="Request demo"
               >
-                Request Demo
+                Resources
               </button>
             </div>
           </div>
