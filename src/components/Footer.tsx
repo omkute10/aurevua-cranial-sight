@@ -64,9 +64,9 @@ const Footer = () => {
     {
       title: 'Resources',
       links: [
-        { label: 'Abstract', href: '#docs' },
-        { label: 'Research Papers', href: '#research' },
-        { label: 'Case Studies', href: '#cases' },
+        { label: 'Abstract', href: 'https://drive.google.com/drive/folders/1JLhyypZP-TXwk6MtslqzfamaTcJBU304?usp=sharing' },
+        { label: 'Research Papers', href: 'https://drive.google.com/drive/folders/1SKpqxDKYcQZso29lqnwc7V18T4RD1sio?usp=sharing' },
+        { label: 'Case Studies', href: 'https://drive.google.com/drive/folders/1KSb5bUm_3awYnNtwr5W8d8MJsupMlJmX?usp=sharing' },
       ]
     }
   ];
