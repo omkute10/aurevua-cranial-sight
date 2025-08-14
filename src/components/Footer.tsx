@@ -122,7 +122,7 @@ const Footer = () => {
 
             {/* Footer Links */}
             <div className="lg:col-span-2">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                 {footerSections.map((section) => (
                   <div key={section.title}>
                     <h3 className="text-lg font-semibold text-aurevua-light mb-4">
@@ -143,6 +143,15 @@ const Footer = () => {
                     </ul>
                   </div>
                 ))}
+                
+                {/* Logo Section */}
+                <div className="flex items-center justify-center">
+                  <img 
+                    src="/src/assets/craniora-logo.svg" 
+                    alt="CRANIORA Logo" 
+                    className="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
               </div>
             </div>
           </div>

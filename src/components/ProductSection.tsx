@@ -64,16 +64,20 @@ const ProductSection = () => {
 
         {/* Main Product Showcase */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
-          {/* Product Image */}
+          {/* Product Video */}
           <div className="slide-in">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-glow opacity-20 rounded-2xl blur-xl group-hover:opacity-30 transition-opacity duration-500" aria-hidden="true" />
-              <img
-                src={productInterface}
-                alt="Aurevua product interface showing 3D cranial scan analysis with diagnostic overlays"
-                className="relative z-10 w-full h-auto rounded-2xl shadow-strong hover:shadow-glow transition-all duration-500"
-                loading="lazy"
-              />
+              <div className="relative z-10 w-full aspect-video rounded-2xl overflow-hidden shadow-strong hover:shadow-glow transition-all duration-500">
+                <iframe
+                  src="https://player.vimeo.com/video/1038934529?autoplay=1&muted=1&loop=1&background=1"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="CRANIORA AI Cranial Screening Demo"
+                />
+              </div>
               <div className="absolute top-4 right-4 z-20 bg-aurevua-dark/80 backdrop-blur-sm text-aurevua-light px-3 py-1 rounded-full text-xs font-mono">
                 LIVE DEMO
               </div>
@@ -96,8 +100,8 @@ const ProductSection = () => {
             {/* Key Stats */}
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-card border border-border rounded-lg">
-                <div className="text-3xl font-bold text-primary mb-2">95%+</div>
-                <div className="text-sm text-muted-foreground font-medium">Accuracy Rate</div>
+                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground font-medium">Available</div>
               </div>
               <div className="text-center p-6 bg-card border border-border rounded-lg">
                 <div className="text-3xl font-bold text-primary mb-2">&lt;5min</div>

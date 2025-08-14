@@ -43,10 +43,13 @@ const Navigation = ({}: NavigationProps) => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            
-            <span className="text-xl font-bold text-aurevua-light tracking-tight">
+            <button
+              onClick={() => handleNavClick('#')}
+              className="text-xl font-bold text-aurevua-light tracking-tight hover:text-aurevua-accent transition-colors duration-300 focus-visible"
+              aria-label="Go to home"
+            >
               CRANIORA
-            </span>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
