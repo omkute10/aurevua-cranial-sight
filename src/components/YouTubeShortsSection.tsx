@@ -3,8 +3,8 @@ import { Play, ExternalLink } from 'lucide-react';
 const YouTubeShortsSection = () => {
   const video = {
     id: 'cuuEGIO3akA',
-    title: 'Craniora Technology Demo',
-    description: 'See how Craniora technology transforms infant healthcare screening',
+    title: 'Technology Demo',
+    description: 'See how technology transforms infant healthcare',
     url: 'https://www.youtube.com/watch?v=cuuEGIO3akA',
     duration: '3:25'
   };
